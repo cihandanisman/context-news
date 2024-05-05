@@ -31,7 +31,7 @@ const News = () => {
   return (
     <div className="d-flex flex-wrap justify-content-around align-items-center card-container">
       {news.map((item,i) =>
-       (item.title !== "[Removed]" && item.urlToImage !== null &&
+       (item.title !== "[Removed]" && item.urlToImage !== null && item.author !== null &&
         <CardNews key={i} item={item} />
       ))}
     </div>
